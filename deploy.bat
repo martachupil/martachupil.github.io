@@ -25,7 +25,7 @@ hugo -d %FOLDER% --gc --minify
 echo Deploying site...
 cd %FOLDER%
 git add .
-git commit -m "Deploy changes from commit %COMMIT%"
+git commit -m "%COMMIT%"
 git push -f origin %BRANCH%
 
 echo Cleanup...
