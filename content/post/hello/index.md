@@ -4,7 +4,7 @@ date: 2019-09-01T02:11:34+03:00
 description: "Post example"
 categories: ["all"]
 dropCap: true
-displayInMenu: true
+displayInMenu: false
 displayInList: true
 draft: false
 resources:
