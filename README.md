@@ -17,6 +17,8 @@ hugo server -D
 * Run `hugo new post/your_post_name_here/index.md`
 * Open `content/post/your_post_name_here/index.md`
 
+**Tip**: Set `draft: false` to make post available on production. 
+
 #### Deploy
 
 Run `deploy` in Windows CMD
