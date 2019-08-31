@@ -8,7 +8,7 @@ set /p COMMIT= < .last_commit
 del .last_commit
 
 if EXIST dist (echo Clean... && rmdir /q/s dist)
-echo Current commit is %COMMIT%
+echo Deploying commit "%COMMIT%"
 
 echo Cloning destination branch...
 git clone %REPO% --branch %BRANCH% --single-branch %FOLDER%
