@@ -3,7 +3,7 @@ set BRANCH=master
 set REPO=git@github.com:martachupil/martachupil.github.io.git
 set FOLDER=dist
 
-git log --format=%%H -n 1 > .last_commit
+git log --format="%%s (%%H)" -n 1 > .last_commit
 set /p COMMIT= < .last_commit
 del .last_commit
 
