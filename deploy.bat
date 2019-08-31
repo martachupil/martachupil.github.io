@@ -19,6 +19,7 @@ bash -c "ls -A | grep -v -E '^(.git|.nojekyll|README.md)$' | xargs rm -rf"
 cd ..
 
 echo Building site...
+cp README.md dist
 hugo -d %FOLDER%
 
 echo Deploying site...

@@ -2,6 +2,8 @@
 
 Source of [martachupil.github.io](https://martachupil.github.io).
 
+Use `src` branch for development.
+
 ### Usage
 
 #### Live-reload
