@@ -22,12 +22,10 @@ echo Building site...
 copy README.md dist
 hugo -d %FOLDER% --gc --minify
 
-exit /b
-
 echo Deploying site...
 cd %FOLDER%
 git add .
-git commit -m "Update docs (%COMMIT%)"
+git commit -m "Deploy changes from commit %COMMIT%"
 git push -f origin %BRANCH%
 
 echo Cleanup...
