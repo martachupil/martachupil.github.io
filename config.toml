@@ -1,4 +1,4 @@
-baseURL = "//martachupil.github.io/"
+baseURL = "//localhost:8080/"
 languageCode = "en-us"
 title = "Marta Chupil"
 theme = "aether"

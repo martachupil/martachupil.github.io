@@ -8,7 +8,7 @@ set /p COMMIT= < .last_commit
 del .last_commit
 
 if EXIST dist (echo Clean... && rmdir /q/s dist)
-echo Latest commit is %COMMIT%
+echo Current commit is %COMMIT%
 
 echo Cloning destination branch...
 git clone %REPO% --branch %BRANCH% --single-branch %FOLDER%
@@ -20,7 +20,9 @@ cd ..
 
 echo Building site...
 copy README.md dist
-hugo -d %FOLDER%
+hugo -d %FOLDER% --gc --minify
+
+exit /b
 
 echo Deploying site...
 cd %FOLDER%
