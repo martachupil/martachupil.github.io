@@ -5,7 +5,7 @@ theme = "aether"
 author = "Marta Chupil"
 disableKinds = "RSS"
 canonifyurls = true
-paginate = 3
+paginate = 2
 
 [params]
 brand = "Marta Chupil"
