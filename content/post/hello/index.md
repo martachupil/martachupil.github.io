@@ -2,7 +2,7 @@
 title: "Hello World"
 date: 2019-09-01T02:11:34+03:00
 description: "Post example"
-categories: ["all"]
+categories: []
 dropCap: true
 displayInMenu: false
 displayInList: true
