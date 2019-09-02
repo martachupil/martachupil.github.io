@@ -1,6 +1,7 @@
+URL: [martachupil.github.io](https://martachupil.github.io).
+
 ## Marta CH Blog
 
-URL: [martachupil.github.io](https://martachupil.github.io).
 Created with Hugo.
 Hugo is a static HTML and CSS website generator written in Go.
 
