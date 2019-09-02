@@ -1,4 +1,4 @@
-## Web-site
+## Marta CH Blog
 
 Source of [martachupil.github.io](https://martachupil.github.io).
 
