@@ -15,6 +15,9 @@ Hugo takes a directory with content and templates and renders them into a full H
 ```
 hugo server -D
 ```
+```
+deploy
+```
 
 
 #### Create a post
