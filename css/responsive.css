@@ -1,0 +1,257 @@
+/* Responsive overrides for generated static pages */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.list-body .nav-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-body .nav-bar .hamburger-menu {
+    margin-left: auto;
+    margin-right: 0;
+    justify-self: auto;
+    text-align: right;
+}
+
+.list-body .nav-bar .hamburger-menu button {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.list-body .main-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    column-gap: 2rem;
+    align-items: start;
+}
+
+.main-container__about {
+    flex: 0 0 320px;
+    max-width: 320px;
+}
+
+.list-body .main-container__about {
+    width: 320px;
+    max-width: 320px;
+}
+
+.main-container__about .about {
+    padding-top: 2.25rem;
+}
+
+.card-container {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.list-body .card-container .blog-card {
+    display: block;
+    width: 100%;
+}
+
+.card,
+.blog-card,
+.card-img-container,
+.card-img {
+    max-width: 100%;
+}
+
+.card-title,
+.card-text,
+.card-subtext p,
+.pagination-nav a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.card-container > span[style*="float:right"] {
+    float: none !important;
+    display: block;
+    text-align: right;
+    margin-bottom: 0.5rem;
+}
+
+.about .avatar img {
+    width: min(100%, 260px);
+    margin: 0 auto;
+}
+
+.about ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.post iframe,
+.post img,
+.post video,
+.post-figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post iframe {
+    width: 100%;
+}
+
+.end-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .list-body .nav-bar {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .main-container {
+        gap: 1.5rem;
+        padding: 0 1rem 1.5rem;
+    }
+
+    .main-container__about {
+        flex-basis: 280px;
+        max-width: 280px;
+    }
+
+    .list-body .main-container {
+        grid-template-columns: 280px minmax(0, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .list-body .main-container__about {
+        width: 280px;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-body .nav-bar {
+        justify-content: space-between;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .list-body .nav-bar .hamburger-menu {
+        margin-left: auto;
+    }
+
+    .main-container,
+    .list-body .main-container {
+        display: block;
+        padding: 0 0.875rem 1.25rem;
+    }
+
+    .main-container__about {
+        max-width: none;
+        margin-bottom: 1.25rem;
+    }
+
+    .main-container__about .about {
+        padding-top: 1.25rem;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .card-container > span[style*="float:right"] {
+        text-align: left;
+    }
+
+    .content,
+    .side-text-padding {
+        padding-left: 0.875rem !important;
+        padding-right: 0.875rem !important;
+    }
+
+    .end-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .side-padding,
+    .side-gutter {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    .nav-bar {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    .main-container {
+        padding: 0 0.75rem 1rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+}
